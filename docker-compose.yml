@@ -1,0 +1,10 @@
+version: '3'
+services:
+  emacsen:
+    image: emacsen:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/root/workspace
+    container_name: myemacsen
